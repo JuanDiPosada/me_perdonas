@@ -1,0 +1,29 @@
+/* Estilos adicionales si los necesitas */
+
+/* Define Minecraft fonts */
+@font-face {
+  font-family: "Minecraft";
+  src: url("assets/fonts/MinecraftRegular-Bmg3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("assets/fonts/MinecraftBold-nMK1.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#btnNo {
+  transition: all 0.1s ease-out;
+  z-index: 10;
+}
+
+#btnSi {
+  z-index: 5;
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Me perdonas?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              minecraft: ['"Minecraft"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[url(assets/bg.png)] h-screen flex flex-col items-center justify-center overflow-hidden bg-center bg-cover p-5"
+  >
+    <div
+      class="text-center p-8 bg-white rounded-3xl shadow-2xl border-4 border-lime-600 transform transition-all hover:scale-105"
+    >
+      <h1
+        class="text-4xl font-bold text-[#3B341F] mb-8 font-minecraft"
+        id="pregunta"
+      >
+        ¿Me perdonas?
+      </h1>
+      <img src="assets/image1.png" id="imgDinamica" class="w-1/4 mx-auto" />
+
+      <div
+        class="flex gap-6 justify-center relative min-h-[100px] items-center"
+      >
+        <button
+          id="btnSi"
+          class="px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-full shadow-lg transition-all active:scale-95 font-minecraft"
+        >
+          Si
+        </button>
+
+        <button
+          id="btnNo"
+          class="px-8 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full shadow-lg transition-all font-minecraft"
+        >
+          No
+        </button>
+      </div>
+    </div>
+
+    <!-- Contenedor para el mensaje final -->
+    <div
+      id="mensajeFinal"
+      class="hidden fixed inset-0 bg-pink-500 bg-opacity-90 flex items-center justify-center flex-col text-white"
+    >
+      <h2 class="text-6xl font-black mb-4 animate-bounce font-minecraft">
+        Gracias Arth
+      </h2>
+      <p class="text-2xl font-minecraft">Te quiero mucho :3</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
